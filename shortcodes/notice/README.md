@@ -1,4 +1,5 @@
 # Notice Shortcode
+      },
 
 ## Installation for Gethugothemes themes
 
@@ -17,22 +18,59 @@ Add the following code to your `assets/scss/main.scss` or `assets/scss/style.scs
 
 <hr>
 
+## Acknowledgments
+
+The notice types are heavily inspired by [Obsidian's Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts).
+
+The svg icons are from [heroicons.com](https://heroicons.com/)
+
 ## Shortcode Implementation
 
 ```md
 {{< notice "note" >}}
-  This is a simple note.
+{{< /notice >}}
+
+{{< notice "abstract" >}}
+{{< /notice >}}
+Aliases: `summary`, `tldr`
+
+{{< notice "info" >}}
+{{< /notice >}}
+
+{{< notice "todo" >}}
 {{< /notice >}}
 
 {{< notice "tip" >}}
-  This is a simple tip.
 {{< /notice >}}
+Aliases: `hint`, `important`
 
-{{< notice "info" >}}
-  This is a simple info.
+{{< notice "success" >}}
 {{< /notice >}}
+Aliases: `check`, `done`
+
+{{< notice "question" >}}
+{{< /notice >}}
+Aliases: `help`, `faq`
 
 {{< notice "warning" >}}
-  This is a simple warning.
 {{< /notice >}}
+Aliases: `caution`, `attention`
+
+{{< notice "failure" >}}
+{{< /notice >}}
+Aliases: `fail`, `missing`
+
+{{< notice "danger" >}}
+{{< /notice >}}
+Aliases: `error`
+
+{{< notice "bug" >}}
+{{< /notice >}}
+
+{{< notice "example" >}}
+{{< /notice >}}
+
+{{< notice "quote" >}}
+{{< /notice >}}
+Aliases: `cite`
 ```
